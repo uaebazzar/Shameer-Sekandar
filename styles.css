@@ -1,0 +1,77 @@
+/* Basic styling for all pages */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.card {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.info {
+    font-size: 1rem;
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.info a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#signOutButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#signOutButton:hover {
+    background-color: #b91c1c;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+    .card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .info {
+        font-size: 0.875rem;
+    }
+}
